@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>האוקינוס הקסום</title>
+    <link href="play.css" rel="stylesheet" />
+    <script src="play.js"></script>
+</head>
+<body>
+    <p id="m"> </p>
+    <button onclick="StartGaming()" id="buttonStart">התחל לשחק!</button>
+
+
+    <!-- הודעת ניצחון -->
+    <div id="successModal" class="modal">
+        <!--<span class="close">&times;</span>-->
+        <div id="theMessage">
+            <img id="imgSuccess" src="img/רקע לניצחון.png" />
+
+            <div class="insideMes">
+                <h1 id="textWinTitle">כל הכבוד</h1>
+                <h2 id="textWin"></h2>
+                <h2 id="textWinMark">הציון שלך הוא: </h2>
+                <button id="btnWin" onclick="closeModal()">לשלב הבא</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- הודעת כישלון -->
+    <div id="failModal" class="modal">
+        <!--<span class="close">&times;</span>-->
+        <div id="failMessage">
+            <img id="imgFail" src="img/חוף בלי כריש.png" />
+            <div class="insideF">
+                <img id="imgShark" src="img/כריש מקדימה.png" />
+                <h1 id="textFTitle">נכשלת :(</h1>
+                <h2 id="textF">הים מסוכן! בפעם הבאה תזהר יותר</h2>
+                <h2 id="textFMark">הציון שלך הוא: </h2>
+                <button id="btnF" onclick="window.close()">נסה שוב</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+</html>

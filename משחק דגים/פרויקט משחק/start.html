@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <script src="Play.js"></script>
+    <link href="Menu.css" rel="stylesheet" />
+    <title>האוקינוס הקסום - התחלה</title>
+
+
+</head>
+<body>
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>האוקינוס הקסום...</h1>
+            <p>ברוך הבא!</p>
+            <button onclick="document.getElementById('id01').style.display='block'">הכנס למשחק</button>
+        </div>
+    </div>
+
+
+    <!--טופס כניסה-->
+    <div dir="rtl" id="id01" class="modal">
+
+        <form id="id01" class="modal-content animate">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="סגירה">&times;</span>
+
+            <div class="container">
+                <h1>כדי שתוכל להנות מהמשחק, אנחנו צריכים לדעת מי אתה!</h1>
+                <button onclick="F1()">הוראות למשחק</button><br />
+
+                <label for="uname"><b>הקש שם פרטי ומשפחה</b></label><br />
+                <input id="tt" type="text" placeholder="הקש את שמך" name="uname" required><br />
+
+                <label for="psw"><b>הקש את הגיל</b></label><br />
+                <input type="text" placeholder="גילך" name="psw" required><br />
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember">פעם ראשונה במשחק<br />
+                </label>
+                <button onclick="Fiildetails()">הכנס</button><br />
+            </div>
+
+
+        </form>
+    </div>
+
+
+
+
+
+</body>
+
+
+</html>
